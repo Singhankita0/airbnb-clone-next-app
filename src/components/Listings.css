@@ -1,0 +1,6 @@
+.listing_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+}
