@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Home.css"
+// import "./Home.css"
 import Car from "./car"
 const Home= () => {
   return (

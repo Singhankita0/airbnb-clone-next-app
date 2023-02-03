@@ -1,10 +1,10 @@
 import React from "react";
-import "./Header.css";
+// import "./Header.css";
 // import SearchIcon from "@material-ui/icons/Search";
-import LanguageIcon from "@material-ui/icons/Language";
-import MenuIcon from "@material-ui/icons/Menu";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
+// import LanguageIcon from "@material-ui/icons/Language";
+// import MenuIcon from "@material-ui/icons/Menu";
+// import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+// import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
 import { AirbnbIcon } from "../Icons";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
@@ -37,10 +37,10 @@ const Header = () => {
         <div className="header_right">
           <div className="airbnb_your_home">Airbnb your home</div>
           <div className="airbnb_your_home">
-            <LanguageIcon />
+            {/* <LanguageIcon /> */}
           </div>
-          <MenuIcon />
-          <AccountCircleIcon />
+          {/* <MenuIcon /> */}
+          {/* <AccountCircleIcon /> */}
         </div>
       </div>
     </>
@@ -139,7 +139,7 @@ const DateInput = ({ label, name }) => {
 };
 
 const GuestInput = ({ name }) => {
-  const [guests, setGuests] = useState("");
+  const [guests, setGuests] = useState("2");
 
   return (
     <div className="guestinput_container">
@@ -148,7 +148,7 @@ const GuestInput = ({ name }) => {
         className="guest_input"
         placeholder="No. of guests"
         type="number"
-        value={guests ? Number(guests) : ""}
+        value={guests ? Number(guests) : undefined}
         onChange={(e) => setGuests(e.target.value)}
         name={name}
         required

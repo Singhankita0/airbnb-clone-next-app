@@ -1,5 +1,5 @@
 import Card from "./Card";
-import "./Listings.css";
+// import "./Listings.css";
 
 const Listings = () => {
   return (

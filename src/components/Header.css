@@ -88,67 +88,75 @@
 
 .form{
     position: relative;
-    font-size: 600;
+    font-weight: 600;
     display: flex;
-    background-color:whitesmoke;
+    background-color:white;
     color: black;
-    border-radius: 50%;
-    padding-left: 8px;
-    padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    border-radius: 9999px;
+    padding-left: 32px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 .search_btn{
-    padding: 1px 15px;
+    padding: 8px 20px;
     font-weight: 600;
     background-color: #ff385c;
     color: white;
-    border-radius: 10px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
 }
 .destination_container{
     display: flex;
     flex-direction: column;
-    place-items: start;
-     width: 208px;
+    align-items: flex-start;
+    width: 208px;
 }
 .destination_input{
     font-weight: 500;
     background-color: transparent;
-    /* border-color: transparent; */
+    border-color: transparent;
     outline: 2px solid transparent;
     outline-offset: 2px;
+    color: black
 }
 
 .date_container{
     display: flex;
     flex-direction: column;
-    place-items: start;
+    align-items: flex-start;
     width: 144px;
-    border-width: 1px;
-    padding-left: 6px;
+    border-left-width: 1px solid #e5e7eb;
+    padding-left: 24px;
 }
 
 
 .date_input{
     font-weight: 500;
     background-color: transparent;
-    /* border-color: transparent; */
+    border-color: transparent;
     outline: 2px solid transparent;
-    outline-offset: 2px;  
+    outline-offset: 2px;
+    color: black;
 }
 
 .guestinput_container{
     display: flex;
     flex-direction: column;
-    place-items: start;
+    align-items: flex-start;
     width: 144px;
-    border-width: 1px;
-    padding-left: 6px;
+    border-left-color: black;
+    border-left-width: 1px solid #e5e7eb;
+    padding-left: 24px;
 }
 .guest_input{
     font-weight: 500;
     background-color: transparent;
-    /* border-color: transparent; */
+    border-color: transparent;
     outline: 2px solid transparent;
-    outline-offset: 2px;  
+    outline-offset: 2px;
+    color: black;
+    width: 100%;
 }

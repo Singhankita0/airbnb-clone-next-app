@@ -1,6 +1,5 @@
 import React from "react";
-import "./Card.css";
-import StarRoundedIcon from "@material-ui/icons/StarRounded";
+// import StarRoundedIcon from "@material-ui/icons/StarRounded";
 import getSymbolFromCurrency from "currency-symbol-map"
 
 const Card = ({name, city, price, rating, img}) => {
@@ -12,7 +11,7 @@ const Card = ({name, city, price, rating, img}) => {
       <div className="card_info">
         <h3 className="card_title">{name}, {city}</h3>
         <div className="card_rating">
-          <StarRoundedIcon />
+          {/* <StarRoundedIcon /> */}
           <p>{rating}</p>
         </div>
       </div>
