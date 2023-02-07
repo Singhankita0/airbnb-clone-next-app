@@ -5,7 +5,7 @@ import React from "react";
 // import MenuIcon from "@material-ui/icons/Menu";
 // import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 // import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
-import { AirbnbIcon } from "../Icons";
+import { AirbnbIcon, MenuIcon, AccountCircle, GlobeIcon } from "../Icons";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 
@@ -37,10 +37,11 @@ const Header = () => {
         <div className="header_right">
           <div className="airbnb_your_home">Airbnb your home</div>
           <div className="airbnb_your_home">
-            {/* <LanguageIcon /> */}
+          {/* <GlobeIcon /> */}
           </div>
-          {/* <MenuIcon /> */}
-          {/* <AccountCircleIcon /> */}
+          <MenuIcon />
+          <AccountCircle />          
+          <GlobeIcon />
         </div>
       </div>
     </>

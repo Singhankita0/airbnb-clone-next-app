@@ -5,7 +5,7 @@ const Listings = () => {
   return (
     <div className="listing_container">
       {data.results.map(result => (
-        <Card name={result.address} city={result.city} price={result.price} rating={result.rating} img={result.images[0]} />
+        <Card address={result.address} city={result.city} price={result.price} rating={result.rating} img={result.images[0]} />
       ))}
     </div>
   );
