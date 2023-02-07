@@ -12,11 +12,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-// Tasks:
-// understand search fixes pr
-// Replace all material ui icons with heroicons
-// fix card data
-
-
