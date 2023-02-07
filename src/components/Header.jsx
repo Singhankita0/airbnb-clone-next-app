@@ -5,7 +5,7 @@ import React from "react";
 // import MenuIcon from "@material-ui/icons/Menu";
 // import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 // import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
-import { AirbnbIcon } from "../Icons";
+import { AirbnbIcon, MenuIcon, AccountCircle, GlobeIcon } from "../Icons";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 
@@ -14,7 +14,7 @@ import "react-datepicker/dist/react-datepicker.css";
 // import MenuIcon from "@mui/icons-material/Menu";
 // import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
-const Header = () => {
+const Header = ({setSearchResults}) => {
 
   return (
     <>
@@ -32,15 +32,16 @@ const Header = () => {
             <SearchRoundedIcon className="search_icon" />
           </div>
         </div> */}
-        <SearchBox />
+        <SearchBox setSearchResults={setSearchResults} />
 
         <div className="header_right">
           <div className="airbnb_your_home">Airbnb your home</div>
           <div className="airbnb_your_home">
-            {/* <LanguageIcon /> */}
+          {/* <GlobeIcon /> */}
           </div>
-          {/* <MenuIcon /> */}
-          {/* <AccountCircleIcon /> */}
+          <MenuIcon />
+          <AccountCircle />          
+          <GlobeIcon />
         </div>
       </div>
     </>
@@ -50,10 +51,7 @@ const Header = () => {
 export default Header;
 
 
-const SearchBox = () => {
-
-  const[startFilter, setStartFilter] =useState(false);
-  
+const SearchBox = ({ setSearchResults }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -75,7 +73,7 @@ const SearchBox = () => {
       options
     )
       .then((response) => response.json())
-      .then((response) => console.log(response))
+      .then((response) => setSearchResults(response.results))
       .catch((err) => console.error(err));
   };
 
